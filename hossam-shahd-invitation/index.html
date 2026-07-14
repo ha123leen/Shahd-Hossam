@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>حسام و شهد | Hossam &amp; Shahd — 24.07.2026</title>
+<meta name="description" content="دعوة زفاف حسام وشهد — 24 يوليو 2026 — فيكتوريا هول، رأس البر">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23071b33'/%3E%3Ctext x='50' y='62' font-size='40' fill='%23C9A44C' text-anchor='middle' font-family='serif'%3EHS%3C/text%3E%3C/svg%3E">
+</head>
+<body class="theme-light" data-lang="en">
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <svg class="preloader-monogram" viewBox="0 0 200 200" width="86" height="86">
+      <circle cx="100" cy="100" r="86" class="ring ring-outer"/>
+      <circle cx="100" cy="100" r="72" class="ring ring-inner"/>
+      <text x="100" y="122" text-anchor="middle" class="preloader-letters">H&amp;S</text>
+    </svg>
+    <p class="preloader-label" data-ar="حـسـام و شـهـد" data-en="HOSSAM &amp; SHAHD">حـسـام و شـهـد</p>
+  </div>
+</div>
+
+<!-- ============ AMBIENT / VIDEO-LIKE CANVAS LAYERS ============ -->
+<canvas id="ambient-canvas" aria-hidden="true"></canvas>
+<canvas id="fireworks-canvas" aria-hidden="true"></canvas>
+
+<!-- ============ TOP CONTROLS: language + theme ============ -->
+<div class="top-controls">
+  <button id="lang-toggle" class="pill-btn" aria-label="Toggle language">
+    <span class="lang-current">EN</span>
+  </button>
+  <button id="theme-toggle" class="pill-btn icon-btn" aria-label="Toggle day/night mode" aria-pressed="false">
+    <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><g stroke="currentColor" stroke-width="1.6"><line x1="12" y1="1.5" x2="12" y2="4.5"/><line x1="12" y1="19.5" x2="12" y2="22.5"/><line x1="1.5" y1="12" x2="4.5" y2="12"/><line x1="19.5" y1="12" x2="22.5" y2="12"/><line x1="4.4" y1="4.4" x2="6.5" y2="6.5"/><line x1="17.5" y1="17.5" x2="19.6" y2="19.6"/><line x1="19.6" y1="4.4" x2="17.5" y2="6.5"/><line x1="6.5" y1="17.5" x2="4.4" y2="19.6"/></g></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
+<!-- ============ FLOATING MUSIC CONTROL ============ -->
+<button id="music-toggle" class="music-toggle" aria-label="Toggle background music" aria-pressed="false">
+  <svg class="music-icon" viewBox="0 0 24 24" width="19" height="19">
+    <path d="M9 18V5l12-2v13" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <circle cx="18" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="1.4"/>
+  </svg>
+  <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+</button>
+<audio id="bg-music" loop preload="none">
+  <source src="assets/audio/wedding-music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ============ NAV ============ -->
+<nav id="site-nav" class="site-nav">
+  <a href="#hero" class="nav-monogram">H&amp;S</a>
+  <ul class="nav-links">
+    <li><a href="#details" data-ar="التفاصيل" data-en="Details">التفاصيل</a></li>
+    <li><a href="#gallery" data-ar="الصور" data-en="Gallery">الصور</a></li>
+    <li><a href="#guestbook" data-ar="سجل الضيوف" data-en="Guest Book">سجل الضيوف</a></li>
+  </ul>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header id="hero" class="hero">
+  <div class="hero-bg" style="background-image:url('assets/images/victoria-hall.png')"></div>
+  <div class="hero-bg-overlay"></div>
+  <canvas id="hero-particles" aria-hidden="true"></canvas>
+  <div class="hero-vignette"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal-seq" data-seq="1" data-ar="حفل زفاف" data-en="The Wedding Of">حفل زفاف</p>
+
+    <div class="hero-headline-stack">
+      <h1 class="hero-happy reveal-seq" data-seq="2" data-ar="ليلة عمرنا" data-en="Happy Wedding">ليلة عمرنا</h1>
+      <div class="hero-names reveal-seq" data-seq="3">
+        <span class="name">Hossam</span>
+        <span class="heart" aria-hidden="true">&#10084;</span>
+        <span class="name">Shahd</span>
+      </div>
+    </div>
+
+    <p class="hero-date reveal-seq" data-seq="4">
+      <span data-ar="24 يوليو 2026" data-en="24 · July · 2026">24 يوليو 2026</span>
+      &nbsp;—&nbsp;
+      <span data-ar="فيكتوريا هول" data-en="Victoria Hall">فيكتوريا هول</span>
+    </p>
+
+    <button id="open-invitation" class="btn-gold reveal-seq" data-seq="5">
+      <span data-ar="افتح الدعوة" data-en="Open Invitation">افتح الدعوة</span>
+    </button>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</header>
+
+<main id="main-content" class="main-content">
+
+  <!-- ============ QUOTE ============ -->
+  <section class="quote-section reveal-on-scroll">
+    <div class="divider" aria-hidden="true"><span class="divider-line"></span><svg class="rose-motif" viewBox="0 0 60 60" width="26" height="26" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M30 22c-5-6-14-4-14 3 0 6 8 11 14 15 6-4 14-9 14-15 0-7-9-9-14-3z"/><circle cx="30" cy="24" r="3.2"/><path d="M30 37v18"/><path d="M30 46c-4-1-7 1-8 5"/><path d="M30 42c4-1 7 1 8 4"/></g></svg><span class="divider-mark">H&amp;S</span><svg class="rose-motif" viewBox="0 0 60 60" width="26" height="26" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M30 22c-5-6-14-4-14 3 0 6 8 11 14 15 6-4 14-9 14-15 0-7-9-9-14-3z"/><circle cx="30" cy="24" r="3.2"/><path d="M30 37v18"/><path d="M30 46c-4-1-7 1-8 5"/><path d="M30 42c4-1 7 1 8 4"/></g></svg><span class="divider-line"></span></div>
+    <p class="quote-text" data-ar="«ومن آياته أن خلق لكم من أنفسكم أزواجًا لتسكنوا إليها وجعل بينكم مودة ورحمة»" data-en="“Two hearts, one story — beginning forever on the 24th of July.”">«ومن آياته أن خلق لكم من أنفسكم أزواجًا لتسكنوا إليها وجعل بينكم مودة ورحمة»</p>
+  </section>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section id="countdown" class="countdown-section reveal-on-scroll">
+    <p class="eyebrow" data-ar="لم يتبقَ الكثير" data-en="Save The Date">لم يتبقَ الكثير</p>
+    <h2 class="section-title" data-ar="العد التنازلي لليلة العمر" data-en="Counting Down To Forever">العد التنازلي لليلة العمر</h2>
+
+    <div class="countdown-grid">
+      <div class="glass-card countdown-card">
+        <span class="countdown-number" id="cd-days">00</span>
+        <span class="countdown-label" data-ar="يوم" data-en="Days">يوم</span>
+      </div>
+      <div class="glass-card countdown-card">
+        <span class="countdown-number" id="cd-hours">00</span>
+        <span class="countdown-label" data-ar="ساعة" data-en="Hours">ساعة</span>
+      </div>
+      <div class="glass-card countdown-card">
+        <span class="countdown-number" id="cd-minutes">00</span>
+        <span class="countdown-label" data-ar="دقيقة" data-en="Minutes">دقيقة</span>
+      </div>
+      <div class="glass-card countdown-card">
+        <span class="countdown-number" id="cd-seconds">00</span>
+        <span class="countdown-label" data-ar="ثانية" data-en="Seconds">ثانية</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENT DETAILS ============ -->
+  <section id="details" class="details-section reveal-on-scroll">
+    <p class="eyebrow" data-ar="يسعدنا حضوركم" data-en="Join Us">يسعدنا حضوركم</p>
+    <h2 class="section-title" data-ar="تفاصيل الحفل" data-en="Event Details">تفاصيل الحفل</h2>
+
+    <div class="details-grid">
+      <div class="glass-card detail-card">
+        <svg class="detail-icon" viewBox="0 0 48 48" width="32" height="32"><rect x="8" y="12" width="32" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><line x1="8" y1="20" x2="40" y2="20" stroke="currentColor" stroke-width="1.4"/><line x1="16" y1="8" x2="16" y2="16" stroke="currentColor" stroke-width="1.4"/><line x1="32" y1="8" x2="32" y2="16" stroke="currentColor" stroke-width="1.4"/></svg>
+        <h3 data-ar="التاريخ" data-en="The Date">التاريخ</h3>
+        <p data-ar="الجمعة، 24 يوليو 2026" data-en="Friday, 24 July 2026">الجمعة، 24 يوليو 2026</p>
+        <p class="detail-sub" data-ar="يبدأ الحفل الساعة 8:00 مساءً" data-en="Celebration begins at 8:00 PM">يبدأ الحفل الساعة 8:00 مساءً</p>
+      </div>
+
+      <div class="glass-card detail-card">
+        <svg class="detail-icon" viewBox="0 0 48 48" width="32" height="32"><path d="M24 6c-8 0-14 6-14 14 0 10 14 22 14 22s14-12 14-22c0-8-6-14-14-14z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="24" cy="20" r="5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        <h3 data-ar="المكان" data-en="The Venue">المكان</h3>
+        <p data-ar="فيكتوريا هول" data-en="Victoria Hall">فيكتوريا هول</p>
+        <p class="detail-sub" data-ar="نادي ضباط الشرطة، رأس البر" data-en="Police Officers Club, Ras El Bar">نادي ضباط الشرطة، رأس البر</p>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Victoria+Hall+Ras+El+Bar" target="_blank" rel="noopener" data-ar="فتح الخريطة" data-en="Open in Maps">فتح الخريطة</a>
+      </div>
+
+      <div class="glass-card detail-card">
+        <svg class="detail-icon" viewBox="0 0 48 48" width="32" height="32"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="1.4"/><line x1="24" y1="24" x2="24" y2="14" stroke="currentColor" stroke-width="1.4"/><line x1="24" y1="24" x2="31" y2="28" stroke="currentColor" stroke-width="1.4"/></svg>
+        <h3 data-ar="الموعد" data-en="The Time">الموعد</h3>
+        <p data-ar="الساعة 8:00 مساءً" data-en="8:00 PM Onwards">الساعة 8:00 مساءً</p>
+        <p class="detail-sub" data-ar="لنفرح معًا بهذه الليلة" data-en="Let's celebrate together">لنفرح معًا بهذه الليلة</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery" class="gallery-section reveal-on-scroll">
+    <p class="eyebrow" data-ar="لحظات" data-en="Moments">لحظات</p>
+    <h2 class="section-title" data-ar="معرض الصور" data-en="Our Gallery">معرض الصور</h2>
+    <p class="section-sub" data-ar="لمحة من حكايتنا — القاعة التي ستُكتب فيها ليلة عمرنا." data-en="A glimpse of our story — the hall where our forever begins.">لمحة من حكايتنا — القاعة التي ستُكتب فيها ليلة عمرنا.</p>
+
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </section>
+
+  <!-- ============ GUEST BOOK ============ -->
+  <section id="guestbook" class="guestbook-section reveal-on-scroll">
+    <p class="eyebrow" data-ar="كلمة من القلب" data-en="A Word From The Heart">كلمة من القلب</p>
+    <h2 class="section-title" data-ar="سجل الضيوف" data-en="Guest Book">سجل الضيوف</h2>
+    <p class="section-sub" data-ar="اترك كلمة جميلة للعروسين، حسام وشهد يسعدهما سماع تهنئتك." data-en="Leave a beautiful message for the couple — Hossam &amp; Shahd would love to read it.">اترك كلمة جميلة للعروسين، حسام وشهد يسعدهما سماع تهنئتك.</p>
+
+    <form id="guestbook-form" class="guestbook-form glass-card" name="guestbook" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="guestbook">
+      <p class="honeypot"><label>Leave this empty: <input name="bot-field"></label></p>
+
+      <div class="field-row">
+        <label for="guest-name" data-ar="اسمك" data-en="Your Name">اسمك</label>
+        <input type="text" id="guest-name" name="name" required maxlength="60" data-ar-placeholder="مثال: سارة أحمد" data-en-placeholder="e.g. Sara Ahmed" placeholder="مثال: سارة أحمد">
+      </div>
+
+      <div class="field-row">
+        <label for="guest-message" data-ar="رسالتك للعروسين" data-en="Your Message">رسالتك للعروسين</label>
+        <textarea id="guest-message" name="message" rows="3" required maxlength="300" data-ar-placeholder="اكتب/ي تهنئتك هنا..." data-en-placeholder="Write your wishes here..." placeholder="اكتب/ي تهنئتك هنا..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-gold btn-block">
+        <span data-ar="إرسال التهنئة" data-en="Send Wishes">إرسال التهنئة</span>
+      </button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <div class="guest-wall" id="guest-wall" aria-live="polite">
+      <!-- messages injected by JS -->
+    </div>
+  </section>
+
+  <!-- ============ THANK YOU ============ -->
+  <section id="thanks" class="thanks-section reveal-on-scroll">
+    <div class="divider" aria-hidden="true"><span class="divider-line"></span><svg class="rose-motif" viewBox="0 0 60 60" width="26" height="26" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M30 22c-5-6-14-4-14 3 0 6 8 11 14 15 6-4 14-9 14-15 0-7-9-9-14-3z"/><circle cx="30" cy="24" r="3.2"/><path d="M30 37v18"/><path d="M30 46c-4-1-7 1-8 5"/><path d="M30 42c4-1 7 1 8 4"/></g></svg><span class="divider-mark">H&amp;S</span><svg class="rose-motif" viewBox="0 0 60 60" width="26" height="26" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M30 22c-5-6-14-4-14 3 0 6 8 11 14 15 6-4 14-9 14-15 0-7-9-9-14-3z"/><circle cx="30" cy="24" r="3.2"/><path d="M30 37v18"/><path d="M30 46c-4-1-7 1-8 5"/><path d="M30 42c4-1 7 1 8 4"/></g></svg><span class="divider-line"></span></div>
+    <p class="eyebrow" data-ar="بكل الحب" data-en="With Love">بكل الحب</p>
+    <h2 class="thanks-title" data-ar="شكرًا لكم" data-en="Thank You">شكرًا لكم</h2>
+    <p class="thanks-text" data-ar="حضوركم أغلى هدية نتمناها. بانتظاركم لنحتفل معًا بأجمل بداية." data-en="Your presence is the greatest gift of all. We can't wait to celebrate this beautiful beginning with you.">حضوركم أغلى هدية نتمناها. بانتظاركم لنحتفل معًا بأجمل بداية.</p>
+    <p class="thanks-signature">Hossam &amp; Shahd</p>
+    <p class="thanks-date">
+      <span data-ar="24 . 07 . 2026" data-en="24 . 07 . 2026">24 . 07 . 2026</span>
+      —
+      <span data-ar="فيكتوريا هول، رأس البر" data-en="Victoria Hall, Ras El Bar">فيكتوريا هول، رأس البر</span>
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <p data-ar="© 2026 حسام و شهد. صُنعت بحب." data-en="© 2026 Hossam &amp; Shahd. Made with love.">© 2026 حسام و شهد. صُنعت بحب.</p>
+  </footer>
+
+</main>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">&#10094;</button>
+  <div class="lightbox-frame" id="lightbox-frame"></div>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">&#10095;</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

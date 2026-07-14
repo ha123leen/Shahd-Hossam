@@ -1,0 +1,19 @@
+ضع ملف الموسيقى هنا باسم:
+
+    wedding-music.mp3
+
+يفضّل اختيار مقطوعة هادئة وموسيقى ناعمة (بيانو/آلات وترية خفيفة) بدون كلام،
+بحيث تعمل في الخلفية دون أن تطغى على المحتوى.
+الموقع يحاول تشغيلها تلقائيًا بعد ضغط "افتح الدعوة"، وإذا منع المتصفح التشغيل
+التلقائي، يظل زر الموسيقى العائم بالأسفل متاحًا للضيف ليشغّلها يدويًا.
+
+---
+
+Add your music file here, named exactly:
+
+    wedding-music.mp3
+
+Choose something soft and gentle (light piano / strings, no vocals) so it
+sits nicely in the background. The site attempts autoplay right after the
+guest taps "Open Invitation"; if the browser blocks autoplay, the floating
+music button stays available for manual play.
